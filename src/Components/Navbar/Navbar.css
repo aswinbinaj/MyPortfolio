@@ -1,0 +1,142 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 170px;
+  padding: 10px 20px; /* Reduced padding */
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 20px;
+}
+
+.connect_with_me button {
+  background-color: #d9f7ff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 12px;
+  width: 170%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.connect_with_me button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_menu li a {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.nav_menu li a.active {
+  color: #abe3ee;
+  font-weight: bold;
+}
+
+.nav_menu {
+  cursor: pointer;
+}
+
+.nav_close {
+  display: none;
+}
+
+.nav-open {
+  display: none;
+}
+
+/* Fix for sticky menu icon */
+.nav-open {
+  display: block;
+  position: fixed;
+  right: 30px;
+  top: 15px; /* Adjusted to reduce space */
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Adjust the first section to reduce top space */
+.first_section {
+  margin-top: 40px; /* Reduce this value further if needed */
+  padding-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    margin: 10px 30px;
+  }
+
+  .connect_with_me {
+    display: none;
+  }
+
+  .nav-open {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 10px; /* Reduced space */
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .nav_close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .nav_menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    right: -350px;
+    height: 100%;
+    width: 350px;
+    padding-top: 50px; /* Reduced */
+    background-color: rgb(26, 25, 25);
+    transition: right 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+  .nav_menu.open {
+    right: 0;
+  }
+
+  .nav_menu li {
+    font-size: 18px;
+    padding: 12px 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .nav_menu li a {
+    color: white;
+  }
+
+  .nav_menu li a.active {
+    color: #abe3ee;
+    font-weight: bold;
+  }
+
+  /* Reduce top space further for mobile */
+  .first_section {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+}
