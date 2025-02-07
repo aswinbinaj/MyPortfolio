@@ -1,8 +1,19 @@
 import React from "react";
 import "../Hero/Hero.css";
 import my_image from "../../assets/my_image.jpg";
+import WhatsApp from "../WhatsApp";
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    const pdfUrl = "/Aswin Binaj_Web_Developer_resume.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Aswin_Binaj_Web_Developer_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="hero" id="home">
       <img src={my_image} alt="Profile" className="my_profile" />
@@ -17,10 +28,10 @@ const Hero = () => {
       </p>
       <div className="hero_buttons">
         <div className="contact_button">
-          <button>Connect with me</button>
+          <WhatsApp />
         </div>
         <div className="resume_button">
-          <button>Download my Resume</button>
+          <button onClick={handleDownloadResume}>Download my Resume</button>
         </div>
       </div>
     </div>
