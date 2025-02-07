@@ -19,11 +19,11 @@ const Skills = () => {
       <div className="skills_lists">
         <img src={reactlogo} alt="React" />
         <img src={wordpress} alt="WordPress" />
-        <img src={php} alt="PHP" />
+        <img src={php} alt="PHP" className="php"/>
         <img src={mysql} alt="MySQL" />
-        <img src={js} alt="JavaScript" />
-        <img src={typescript} alt="TypeScript" />
-        <img src={html} alt="HTML" />
+        <img src={js} alt="JavaScript" className="javascript" />
+        <img src={typescript} alt="TypeScript" className="typescript"/>
+        <img src={html} alt="HTML" className="html" />
         <img src={css} alt="CSS" />
       </div>
     </div>

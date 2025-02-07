@@ -1,100 +1,99 @@
-/* Base Styles */
 .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6rem;
-    padding: 20px;
-  }
-  
-  .skills_tittle h1 {
-    font-size: 45px;
-    font-weight: 600;
-    text-align: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 20px;
+}
+
+.skills_tittle h1 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skills_lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.skills_lists img {
+  height: 75px;
+  width: 75px;
+  transition: transform 0.3s ease;
+}
+
+.skills_lists img:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
   .skills_lists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .skills_lists img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills {
+    gap: 4rem;
+  }
+
+  .skills_tittle h1 {
+    font-size: 40px;
+  }
+
+  .skills_lists {
+    gap: 2rem;
+  }
+
+  .skills_lists img {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
     gap: 3rem;
   }
-  
+
+  .skills_tittle h1 {
+    font-size: 35px;
+  }
+
+  .skills_lists {
+    gap: 1.5rem;
+  }
+
   .skills_lists img {
-    height: 75px;
-    width: 75px;
-    transition: transform 0.3s ease;
+    height: 60px;
+    width: 60px;
   }
-  
-  .skills_lists img:hover {
-    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .skills {
+    gap: 2rem;
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .skills_lists {
-      gap: 2.5rem;
-    }
-  
-    .skills_lists img {
-      height: 70px;
-      width: 70px;
-    }
+
+  .skills_tittle h1 {
+    font-size: 30px;
   }
-  
-  @media (max-width: 992px) {
-    .skills {
-      gap: 4rem;
-    }
-  
-    .skills_tittle h1 {
-      font-size: 40px;
-    }
-  
-    .skills_lists {
-      gap: 2rem;
-    }
-  
-    .skills_lists img {
-      height: 65px;
-      width: 65px;
-    }
+
+  .skills_lists {
+    gap: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .skills {
-      gap: 3rem;
-    }
-  
-    .skills_tittle h1 {
-      font-size: 35px;
-    }
-  
-    .skills_lists {
-      gap: 1.5rem;
-    }
-  
-    .skills_lists img {
-      height: 60px;
-      width: 60px;
-    }
+
+  .skills_lists img {
+    height: 50px;
+    width: 50px;
   }
-  
-  @media (max-width: 480px) {
-    .skills {
-      gap: 2rem;
-    }
-  
-    .skills_tittle h1 {
-      font-size: 30px;
-    }
-  
-    .skills_lists {
-      gap: 1rem;
-    }
-  
-    .skills_lists img {
-      height: 50px;
-      width: 50px;
-    }
-  }
+}

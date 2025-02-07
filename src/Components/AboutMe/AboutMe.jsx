@@ -34,17 +34,17 @@ const AboutMe = () => {
               <h1>1+</h1>
               <p>YEARS OF EXPERIENCE</p>
             </div>
-            <hr style={{ border: "1px solid #398AA5" }} />
+            {/* <hr style={{ border: "1px solid #398AA5" }} /> */}
             <div className="about_achievements">
               <h1>15+</h1>
               <p>PROJECTS COMPLETED</p>
             </div>
-            <hr style={{ border: "1px solid #398AA5" }} />
+            {/* <hr style={{ border: "1px solid #398AA5" }} /> */}
             <div className="about_achievements">
               <h1>10+</h1>
               <p>HAPPY CLIENTS</p>
             </div>
-            <hr style={{ border: "1px solid #398AA5" }} />
+            {/* <hr style={{ border: "1px solid #398AA5" }} /> */}
             <div className="about_achievements">
               <h1>50+</h1>
               <p>STUDENTS TRAINED</p>

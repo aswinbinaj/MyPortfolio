@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0px 170px;
-  padding: 10px 20px; /* Reduced padding */
+  padding: 10px 20px;
 }
 
 .nav_menu {
@@ -54,23 +54,10 @@
   display: none;
 }
 
-/* Fix for sticky menu icon */
-.nav-open {
-  display: block;
-  position: fixed;
-  right: 30px;
-  top: 15px; /* Adjusted to reduce space */
-  cursor: pointer;
-  z-index: 3;
+.hidden {
+  display: none !important;
 }
 
-/* Adjust the first section to reduce top space */
-.first_section {
-  margin-top: 40px; /* Reduce this value further if needed */
-  padding-top: 40px;
-}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
     margin: 10px 30px;
@@ -84,7 +71,7 @@
     display: block;
     position: fixed;
     right: 20px;
-    top: 10px; /* Reduced space */
+    top: 10px;
     cursor: pointer;
     z-index: 3;
   }
@@ -107,7 +94,7 @@
     right: -350px;
     height: 100%;
     width: 350px;
-    padding-top: 50px; /* Reduced */
+    padding-top: 50px;
     background-color: rgb(26, 25, 25);
     transition: right 0.3s ease-in-out;
     z-index: 2;
@@ -134,7 +121,6 @@
     font-weight: bold;
   }
 
-  /* Reduce top space further for mobile */
   .first_section {
     margin-top: 30px;
     padding-top: 30px;

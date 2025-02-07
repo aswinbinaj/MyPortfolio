@@ -27,7 +27,7 @@ const Navbar = () => {
         src={open_menu}
         onClick={openMenu}
         alt="Open Menu"
-        className="nav-open"
+        className={`nav-open ${isMenuOpen ? 'hidden' : ''}`}
       />
       <ul ref={menuRef} className={`nav_menu ${isMenuOpen ? "open" : ""}`}>
         <img

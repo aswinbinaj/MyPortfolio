@@ -1,4 +1,3 @@
-/* Base Styles */
 .aboutme {
   display: flex;
   flex-direction: column;
@@ -80,7 +79,7 @@
   transition: 0.5s;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries */
 @media (max-width: 1200px) {
   .aboutme {
     margin: 80px 100px;
