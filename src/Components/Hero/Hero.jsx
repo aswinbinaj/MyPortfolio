@@ -16,7 +16,12 @@ const Hero = () => {
 
   return (
     <div className="hero" id="home">
-      <img src={my_image} alt="Best Web Developer in Kollam" className="my_profile" loading="lazy" />
+      <img
+        src={my_image}
+        alt="Best Web Developer in Kollam"
+        className="my_profile"
+        loading="lazy"
+      />
       <h1>
         <span>I'm Aswin Binaj</span> <br /> Web Developer based in Kerala
       </h1>

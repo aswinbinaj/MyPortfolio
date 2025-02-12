@@ -64,7 +64,7 @@ const Navbar = () => {
             About Me
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link
             to="services"
             smooth={true}
@@ -77,7 +77,7 @@ const Navbar = () => {
           >
             Services
           </Link>
-        </li> */}
+        </li>
         <li>
           <Link
             to="portfolio"
